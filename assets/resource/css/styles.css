@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+html {
+    background-color: #fff;
+    color:#fff;
+    font-family: "Fira Sans";
+    font-size: 15px;
+    text-rendering:optimizeLegibility;
+    scroll-behavior: smooth;
+}
+/* Navbar CSS */
+.logo {
+    padding: 5px 0px 5px 0px;
+}
+
+header{
+    min-height: 100vh;
+    background-image: url(../img/bg1.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    background-color: transparent;
+    display:flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar.scrolled {
+    background: #222831 !important;
+    position: fixed;
+} 
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #ff869e;
+    font-size: 15px;
+    margin: 5px 0px 5px 0px;
+    width: 120px;
+    text-align:center;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    text-transform: uppercase;
+    color: #151515;
+    background-color:#ff869e;
+    border-radius:10px;
+    font-size: 15px;
+    margin: 5px 0px 5px 0px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.navbar-nav > .active > a {
+    background-color: #ff869e;
+    color: #151515;
+}
+
+.nav-link.active {
+    background-color: #ff869e;
+    color: #151515;
+    border-radius: 10px;
+    /* Add other active styles here */
+  }
+
+.navbar-collapse {
+    width: 100vw;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0px 0px 0px 5px;
+    transition: 0.5s ease;
+    
+}
+
+.navbar-toggler {
+    
+    background-color:#ff869e;   
+}
+
+/* Navbar CSS */
+
+.header-text {
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+section {
+    padding: 30px;
+}
+
+/* ABOUT ME CSS */
+#aboutme {
+    background-color:#191d24;
+    color: #f5f5f5;
+
+}
+
+#aboutme .name {
+    color: #f5f5f5;
+}
+
+.desc {
+    text-align: justify;
+}
+/* About Me CSS */
+
+#portfolio {
+    background-color: #222831;
+    color: #f5f5f5;
+    padding-top:50px;
+
+}
+#contactme {
+    background-color: #f5f5f5;
+    color: #151515;
+    padding-top:50px;
+}
+
+#contactme p {
+    font-weight: 400;
+}
+
+#contactme label {
+    font-weight:800;
+    font-size: 15px;
+}
+
+.greetings {
+    margin-top: 7rem;
+}
+
+.p {
+    font-size: 20px;
+}
+.headername {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    word-spacing: 1px;
+    margin-top: 150px !important;
+    font-family: "Bebas Neue";
+}
+
+.btn {
+    font-family: "Arial";
+    margin-top: 20px;
+    border:1px solid #ff869e;
+    border-radius: 5px;
+    margin-right:5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    border: #971549;
+    background-color: #971549;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f5f5f5;
+    transition: 0.8s ease;
+}
+
+.btn1 {font-family: "Arial";
+    margin-top: 20px;
+    background-color: #ff869e;
+    border-radius: 10px;
+    margin-right:5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #151515;
+    width: 150px;
+    padding:10px;
+    border:#ff869e;
+}
+.btn1:hover {
+    background-color: #f5f5f5;
+    font-size: 15px;
+    font-weight: 600;
+    border:2px solid #151515;
+    transition: 0.5s ease;
+}
+
+@media (max-width:992px) {
+    .navbar-collapse {
+        background-color: #151515;
+    }
+    
+}
+@media (max-width: 768px) {
+    #aboutme .card {
+        background: #151515;
+        margin-top: 50px;
+        width: 420px;
+    }
+    #aboutme .progress {
+        width: 400px;
+        text-align:center;
+        margin: 30px 0px 30px 0px;
+        background-color:#f5f5f5;
+    }
+}
+
+.header-title {
+    padding: 5px 0px 20px 0;
+    margin:0 auto;
+}
+
+.form-group {
+    width: 70%;
+}
+
+.aboutme_name {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.a-name {
+    font-size:20px;
+    font-weight: lighter;
+}
+/* Icons */
+.fa-envelope-o {
+    color: #ff869e;
+    float: left;
+    font-size: 30px;
+    padding: 0 30px 0 0;
+}
+.fa-mobile {
+    color: #ff869e;
+    float: left;
+    font-size: 30px;
+    padding: 0 30px 0 0;   
+}
+/* .fa-square-facebook {
+    color: #151515;
+    float: left;
+    font-size: 30px;
+    padding: 10px 30px 0 0;   
+} */
+
+.icons a {
+    color: #151515;
+    float: left;
+    font-size: 30px;
+    padding: 10px 30px 0 0;   
+}
+/* .fa-instagram {
+    color: #151515;
+    float: left;
+    font-size: 30px;
+    padding: 10px 30px 0 0;   
+}
+.fa-linkedin {
+    color: #151515;
+    float: left;
+    font-size: 30px;
+    padding: 10px 30px 0 0;   
+}
+.fa-twitter {
+    color: #151515;
+    float: left;
+    font-size: 30px;
+    padding: 10px 30px 0 0;   
+} */
+/* Icons */
+
+.title {
+    font-family: "Arial";
+    font-weight: bold;
+}
+.emailadd {
+    color: #971549;
+    font-weight: 600;
+}
+.works {
+    color: #ff869e;
+    font-weight: 600;
+}
+
+.form-group1 {
+    margin-top: 25px;
+    float: right;
+}
+
+.form-control {
+    margin-bottom: 10px;
+
+    border-radius:7px;
+}
+
+#name3{
+    padding-top:20px;
+    padding-bottom:200px;
+}
+
+.card {
+    width: 320px;
+    margin: 0 auto;
+    height: 320px;
+    border-radius: 5px;
+    margin-bottom: 20px !important;
+}
+
+.website {
+    width: 320px;
+    margin: 0 auto;
+    height: 380px;
+    border-radius: 5px;
+    margin-bottom: 20px !important;
+
+}
+
+.line {
+    background-color: #f5f5f5;
+}
+
+#portfolio .card-title {
+    color: #151515;
+    font-weight: 700;
+    font-size:20px;
+    
+}
+#portfolio .card-subtitle {
+    color: #959595;
+    font-size: 13px;
+    opacity: 0.5;
+}
+#portfolio .card-text{
+    font-size: 12px;
+    color: #151515;
+    opacity: none;
+}
+
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 152px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.percent {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  line-height: 150px;
+  z-index: 2;
+  margin-top: 0.5em;
+  margin-left: 0.5em
+}
+
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+ .skill {
+    margin-top: 25px;
+  }
+
+.skill h5 {
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    /* padding-bottom: 100px; */
+  }
+
